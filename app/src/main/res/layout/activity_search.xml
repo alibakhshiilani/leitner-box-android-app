@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="top">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:paddingLeft="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="6dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/backBtn"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:tint="#ffffff"
+            android:clickable="true"
+            android:layout_gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/searchBtn"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_search_category_default"
+            android:tint="#ffffff"
+            android:clickable="true"
+            android:layout_gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/backBtn" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="14dp"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:padding="5dp"
+            android:id="@+id/searchInput"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="جستجو در لغات ..."
+            android:backgroundTint="#fff"
+            android:textColorHint="#333"
+            android:background="#fff"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/searchBtn" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/toolbar_shadow"
+    />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <ListView android:id="@+id/searchResult"
+            android:layout_height="0dip"
+            android:layout_width="match_parent"
+            android:layout_weight="1" >
+
+        </ListView>
+
+    </TableLayout>
+
+
+</LinearLayout>

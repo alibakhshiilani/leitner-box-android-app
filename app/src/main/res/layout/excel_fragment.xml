@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/download"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="بارگزاری کارت با فایل Excel"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:textSize="14sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/excel_description"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:textColor="#fff"
+            android:text="انتخاب فایل از حافظه دستگاه"
+            android:background="@color/primary_dark"
+            android:id="@+id/ChooseExcel"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/filenameExcel"
+            android:text="هیچ فایلی انتخاب نشده است"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/categories_spinner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="انتخاب دسته بندی"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:textColor="#fff"
+            android:text="شروع بارگزاری فایل"
+            android:background="@color/colorPrimary"
+            android:id="@+id/startImportExcel"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>

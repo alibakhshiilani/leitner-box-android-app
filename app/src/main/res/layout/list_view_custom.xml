@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customTextView"
+    android:textColor="#333"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:textSize="22dp"
+    android:layout_height="wrap_content"/>

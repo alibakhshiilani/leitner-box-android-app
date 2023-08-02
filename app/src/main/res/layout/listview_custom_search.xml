@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dp"
+    android:layout_gravity="center"
+    android:paddingRight="10dp">
+
+    <TextView android:id="@+id/onCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="Car"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:padding="5px"
+        />
+
+    <TextView android:id="@+id/backCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="خودرو"
+        android:textSize="20dp"
+        android:layout_marginRight="0dp"
+        android:padding="5px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout >

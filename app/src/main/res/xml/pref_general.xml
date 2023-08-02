@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="lockSwitch" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="timerSwitch" />
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="fontValue" />
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="timerValue" />
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="timerValue" />
+
+    <EditTextPreference
+        android:defaultValue="244"
+        android:key="rColorValue" />
+
+
+    <EditTextPreference
+        android:defaultValue="54"
+        android:key="bColorValue" />
+
+
+    <EditTextPreference
+        android:defaultValue="67"
+        android:key="gColorValue" />
+
+
+</PreferenceScreen>

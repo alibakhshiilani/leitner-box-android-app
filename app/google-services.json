@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "732041032495",
+    "firebase_url": "https://nabeghe-loghat.firebaseio.com",
+    "project_id": "nabeghe-loghat",
+    "storage_bucket": "nabeghe-loghat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732041032495:android:26e38e243bd6aca4",
+        "android_client_info": {
+          "package_name": "com.alibakhshiilani.leitnerbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732041032495-31bpiu7v65plsj0d1ged6p75c1u66rbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq4lhF-EXOS6vxUJH9jwXzea5WY6Td_PY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

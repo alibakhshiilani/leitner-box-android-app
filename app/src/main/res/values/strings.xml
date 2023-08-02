@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">اپ جعبه لایتنر</string>
+
+    <string name="excel_description">در صورتی که مایلید کارت های خود را از طریق فایل اکسل وارد کنید به این صورت عمل کنید : اول باید از قسمت "افزودن گروه جدید" یک بخش جدید ایجاد نمایید. مثلا  " لغات کلاس زبان" یا " زبان آلمانی 1 ". حالا یک فایل اکسل با سه ستون به نامهای  A و B و C ایجاد کنید. در ستون A لغت ، در ستون B تلفظ و در ستون C معنی لغت را بنویسد. همین کار را می توانید در تمام سطر ها بدون هیچ محدودیتی تا بی نهایت انجام دهید و سپس فایل را ذخیره نمایید. حالا به گروه جدیدی که ایجاد کرده اید بروید و از بخش "افزودن کارت از طریق فایل اکسل" فایل مورد نظر را انتخاب کنید. و بعد دگمه "شروع بارگزاری فایل" را بزنید. حالا گروه جدیدی که ایجاد کرده اید با تمام لغات و یا سوالات آن قابل استفاده هستند. توجه کنید وجود هر سه ستون در فایل اکسل ضروری هستند. اما می توانید ستون B را خالی بگذارید. برای سایر دروس مثلا " ادبیات " یا دین و زندگی" هم می توانید در ستون A سوال و در ستون C جواب را درج کنید و ستون B  خالی باشد. می توانید فرمول های شیمی یا ریاضی و یا حتی زبان های برنامه نویسی را از این طریق یاد بگیرید. سعی کنید سوال ها و جواب ها کوتاه باشند تا نتیجه بهتری بگیرید.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="fileSize">File Size</string>
+    <string name="currentDir">Current Dir</string>
+    <string name="title_activity_login">ورود به اپ جعبه لایتنر</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">پست الکترونیک</string>
+    <string name="prompt_password">گذرواژه</string>
+    <string name="action_sign_in">ورود به اپ جعبه لایتنر</string>
+    <string name="action_sign_in_short">ورود</string>
+    <string name="error_invalid_email">ایمیل نادرست است</string>
+    <string name="error_invalid_password">گذرواژه حداقل 4 کاراکتر است</string>
+    <string name="error_incorrect_password">گذرواژه نادرست است</string>
+    <string name="error_field_required">این فیلد الزامی است</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_setting_">Setting_Activity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+</resources>

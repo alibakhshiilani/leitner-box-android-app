@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:textDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تغییر رمز عبور برنامه"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="22dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لطفا در انتخاب رمز عبور برنامه دقت بفرمایید , رمز عبور به حروف کوچک و بزرگ حساس است , در صورت فراموشی رمز عبور امکان بازیابی آن وجود ندارد !"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="در صورتی که نیاز به رمز عبور ندارید , در صفحه تنظیمات فعال سازی قفل برنامه رو فعال نکنید !"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ذخیره رمز عبور"
+                android:background="@drawable/button_stroke"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:id="@+id/savePass"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="انصراف"
+                android:background="@drawable/button_stroke"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:onClick="cancelCart"
+                android:id="@+id/cancelPass"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alibakhshiilani.leitnerbox">
+
+
+    <uses-sdk
+        tools:overrideLibrary="co.ronash.pushe" />
+    <uses-permission
+        android:name="com.alibakhshiilani.leitnerbox.permission.C2D_MESSAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Optional permissions -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+
+    <permission
+        android:name="com.alibakhshiilani.leitnerbox.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.alibakhshiilani.leitnerbox.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/learninglogo"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".simplefilechooser.ui.FileChooserActivity"
+            android:label="انتخاب فابل" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Setting_Activity"
+            android:label="@string/title_activity_setting_"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name=".Services.PushNotification"
+            android:exported="false" />
+
+        <!--
+        <receiver android:name=".Services.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity android:name=".SearchActivity" />
+
+
+
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="com.alibakhshiilani.leitnerbox"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.alibakhshiilani.leitnerbox" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="co.ronash.pushe.token" android:value="PUSHE_291105597001"/>
+        <meta-data android:name="co.ronash.pushe.cr" android:value="aHR0cDovL2M2ZjcxMzc5YWVkMjQ2ZTBhYmEzMTBjZTBhYTc5N2RlOmY4NjY0MDE4MTQ3ODQzYTBiYWNhN2M4NTIzMjFiY2Q0QGNhLnB1c2hlLmlyLzg5MjA="/>
+
+    </application>
+
+
+</manifest>
+

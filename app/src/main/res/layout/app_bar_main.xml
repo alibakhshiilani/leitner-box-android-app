@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.alibakhshiilani.leitnerbox.MainActivity">
+
+    <include layout="@layout/toolbar_main"/>
+
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:visibility="gone"
+        android:tint="#ffffff"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add_icon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/excelFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:visibility="gone"
+        android:tint="#ffffff"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/excel"
+        app:layout_anchor="@id/fab"
+        app:layout_anchorGravity="top" />-->
+
+</android.support.design.widget.CoordinatorLayout>

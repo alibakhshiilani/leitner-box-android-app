@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:textDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="پرداخت"
+            android:textColor="#000000"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="برای استفاده از این امکان باید از پرداخت بازار استفاده نمایید"
+            android:textColor="#000000"
+            android:textSize="18dp"/>
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خرید کل گروه های نرم افزار (4500 تومان)"
+                android:background="@drawable/button_stroke"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:id="@+id/full"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خرید گروه"
+                android:background="@drawable/button_stroke"
+                android:textColor="#ffffff"
+                android:id="@+id/single"
+                android:layout_marginTop="30dp"
+                />
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

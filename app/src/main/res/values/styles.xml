@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/dialog_style</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="SpecialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#555</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+</resources>

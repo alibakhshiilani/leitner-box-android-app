@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--<group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_carts"
+            android:icon="@drawable/cards"
+            android:title="مرور کارت ها"/>
+    </group>-->
+
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="لیست گروه بندی"/>
+    </group>
+
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_categories_add"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="افزودن گروه بندی" />
+    </group>
+
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_export"
+            android:icon="@drawable/export"
+            android:title="دریافت خروجی از اطلاعات برنامه" />
+    </group>
+
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_import"
+            android:icon="@drawable/download"
+            android:title="بازیابی کارت ها از فایل خروجی" />
+    </group>
+
+    <group android:id="@+id/grp6" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_excel"
+            android:icon="@drawable/excel"
+            android:title="افزودن کارت از فایل excel"/>
+    </group>
+
+
+    <!--<group android:id="@+id/grp7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_lock"
+            android:icon="@android:drawable/ic_lock_idle_lock"
+            android:title="رمز گذاری روی برنامه" />
+    </group>-->
+
+
+    <group android:id="@+id/grp8" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="تنظیمات" />
+    </group>
+
+    <group android:id="@+id/grp9" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/information"
+            android:title="درباره اپ جعبه لایتنر" />
+    </group>
+
+    <group android:id="@+id/grp10" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="تماس با ما" />
+    </group>
+
+</menu>

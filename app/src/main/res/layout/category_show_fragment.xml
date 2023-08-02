@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <TextView
+            android:textSize="22sp"
+            android:paddingTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryShowTitle"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"/>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/catLogo"
+                android:src="@drawable/google_translate_text_language_translation"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/chartTitle"
+                android:padding="8dp" />
+        </TableLayout>
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </FrameLayout>
+
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:fillViewport="true">
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:text="شروع مرور"
+                android:id="@+id/startReview"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:text="لیست کارت ها"
+                android:id="@+id/listCarts"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:text="افزودن لغت از Excel"
+                android:id="@+id/addFromExcel"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:text="ایجاد لغت جدید"
+                android:id="@+id/addFromInput"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                />
+        </TableLayout>
+
+    </TableLayout>
+
+</ScrollView>
